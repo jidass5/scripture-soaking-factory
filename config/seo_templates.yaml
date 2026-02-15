@@ -1,0 +1,28 @@
+# SEO Templates for YouTube Metadata
+templates:
+  title: "{duration} Hour {theme} | {frequency}Hz | {audience}"
+  description: |
+    🌙 Experience {duration} hours of pure rest as Scripture washes over your mind.
+
+    This video features:
+    ✨ Therapeutic {frequency}Hz frequency tuning
+    ✨ Whispered, maternal vocal delivery
+    ✨ De-essed audio for sensitive ears
+    ✨ Ambient cathedral reverb
+
+    📖 FEATURED VERSES:
+    {verse_list}
+
+    🔬 WHY {frequency}Hz?
+    Known as the "natural frequency," {frequency}Hz aligns with the harmonic patterns found in nature...
+
+    ⚠️ DISCLAIMER:
+    This content is for spiritual enrichment and relaxation. It is not a substitute for medical treatment...
+
+    🙏 SUBSCRIBE for weekly releases
+  tags:
+    - "scripture soaking"
+    - "bible sleep meditation"
+    - "{frequency}hz healing"
+    - "christian meditation"
+    - "sleep with god's word"

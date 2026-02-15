@@ -1,0 +1,14 @@
+# DSP Profiles for different emotional intentions
+profiles:
+  seguranca_transferida:
+    reverb_preset: "large_cathedral"
+    widening: 0.35
+    vocal_boost_db: 1.5
+  declaracao_de_shalom:
+    reverb_preset: "peaceful_hall"
+    widening: 0.25
+    vocal_boost_db: 0.0
+  passividade_sagrada:
+    reverb_preset: "ethereal_space"
+    widening: 0.45
+    vocal_boost_db: -1.0

@@ -1,0 +1,14 @@
+python-dotenv==1.0.0
+pydantic==2.5.0
+pyyaml==6.0.1
+pydub==0.25.1
+scipy==1.11.4
+librosa==0.10.1
+soundfile==0.12.1
+ffmpeg-python==0.2.0
+requests==2.31.0
+elevenlabs==0.2.26
+tqdm==4.66.1
+tenacity==8.2.3
+yt-dlp==2023.12.30
+google-api-python-client==2.108.0

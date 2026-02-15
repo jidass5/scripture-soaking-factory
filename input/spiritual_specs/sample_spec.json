@@ -1,0 +1,32 @@
+{
+  "hook_structure": {
+    "duration_seconds": 28800,
+    "verses": [
+      {
+        "frequência_hz": 432,
+        "verso_inglês": "The Lord is my shepherd; I shall not want.",
+        "referência": "Psalm 23:1",
+        "intenção_emocional": "segurança_transferida",
+        "análise_fonética": {},
+        "análise_semântica": {}
+      },
+      {
+        "frequência_hz": 432,
+        "verso_inglês": "He makes me lie down in green pastures; he leads me beside quiet waters.",
+        "referência": "Psalm 23:2",
+        "intenção_emocional": "declaração_de_shalom",
+        "análise_fonética": {},
+        "análise_semântica": {}
+      },
+      {
+        "frequência_hz": 432,
+        "verso_inglês": "He refreshes my soul. He guides me along the right paths for his name's sake.",
+        "referência": "Psalm 23:3",
+        "intenção_emocional": "passividade_sagrada",
+        "análise_fonética": {},
+        "análise_semântica": {}
+      }
+    ],
+    "sequência_de_hook": {}
+  }
+}

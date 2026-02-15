@@ -1,0 +1,25 @@
+# Audio Configuration for Scripture Soaking Factory
+vocal_processing:
+  sample_rate: 48000
+  bit_depth: 24
+  target_lufs: -18.0
+  normalization_type: "peak"
+
+dsp_chain:
+  pitch_shift_cents: -31.766  # 440Hz to 432Hz
+  deesser:
+    threshold_db: -20.0
+    ratio: 6.0
+    attack_ms: 1.0
+    release_ms: 50.0
+    freq_range: [4000, 8000]
+  reverb:
+    decay_time: 5.0
+    pre_delay_ms: 40.0
+    wet_mix: 0.4
+  stereo_widening:
+    width_factor: 0.3
+    haas_delay_ms: 15.0
+  final_master:
+    target_lufs: -16.0
+    limiter_ceiling_db: -0.1
