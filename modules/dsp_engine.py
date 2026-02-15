@@ -88,10 +88,29 @@ class DSPEngine:
         logger.info("Applying stereo widening...")
         # Convert mono to stereo
         left = audio
-        right = AudioSegment.silent(duration=delay_ms) + audio
-        right = right[:len(left)]
+        # Ensure right channel has exactly the same number of frames
+        right = AudioSegment.silent(duration=delay_ms, frame_rate=audio.frame_rate) + audio
+        right = right[:len(audio)]
         
-        return AudioSegment.from_mono_audiosegments(left, right)
+        # Manually interleave samples to avoid pydub slice errors
+        l_samples = np.array(left.get_array_of_samples())
+        r_samples = np.array(right.get_array_of_samples())
+        
+        # Ensure they are the same length
+        min_len = min(len(l_samples), len(r_samples))
+        l_samples = l_samples[:min_len]
+        r_samples = r_samples[:min_len]
+        
+        stereo_samples = np.empty((min_len * 2,), dtype=l_samples.dtype)
+        stereo_samples[0::2] = l_samples
+        stereo_samples[1::2] = r_samples
+        
+        return AudioSegment(
+            stereo_samples.tobytes(),
+            frame_rate=audio.frame_rate,
+            sample_width=audio.sample_width,
+            channels=2
+        )
 
     def master_limiter(self, audio: AudioSegment, target_lufs: float = -16.0) -> AudioSegment:
         """Final limiting and loudness normalization."""
